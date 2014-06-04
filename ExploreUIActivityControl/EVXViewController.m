@@ -10,7 +10,7 @@
 
 @interface EVXViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *myActivityIndicatorView;
-// @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 
 @end
 
