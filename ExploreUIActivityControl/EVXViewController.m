@@ -9,10 +9,22 @@
 #import "EVXViewController.h"
 
 @interface EVXViewController ()
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *myActivityIndicatorView;
+// @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 
 @end
 
 @implementation EVXViewController
+- (IBAction)mySwitchActivity:(id)sender {
+    UISwitch *mySwitch = (UISwitch*)sender;
+    if (mySwitch.isOn)
+        [self.myActivityIndicatorView startAnimating];
+        else
+            [self.myActivityIndicatorView stopAnimating]; 
+
+
+
+}
 
 - (void)viewDidLoad
 {
