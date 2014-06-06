@@ -28,15 +28,16 @@
 
 - (IBAction)mySwitchChanged:(id)sender
 {
-    NSLog(@"%@", [NSThread callStackSymbols]);
-    self.myLabel.text = @"I was touched";
-    NSLog(@"calling:%s",__PRETTY_FUNCTION__);
 
-//    NSLog(@"TouchedFired");
+    self.myLabel.text = @"I was touched";
+
+#if DEBUG
+    NSLog(@"calling:%s",__PRETTY_FUNCTION__);
+    NSLog(@"%@", [NSThread callStackSymbols]);
 //    if (_myLabel.text !=nil) {
 //        NSLog(@".");
 //    }
-
+#endif
 
 }
 
