@@ -33,7 +33,7 @@
 
 #if DEBUG
     NSLog(@"calling:%s",__PRETTY_FUNCTION__);
-    NSLog(@"%@", [NSThread callStackSymbols]);
+//    NSLog(@"%@", [NSThread callStackSymbols]);
 //    if (_myLabel.text !=nil) {
 //        NSLog(@".");
 //    }
