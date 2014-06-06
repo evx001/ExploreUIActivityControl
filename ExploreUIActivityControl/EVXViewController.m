@@ -10,14 +10,24 @@
 
 @interface EVXViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @end
 
 @implementation EVXViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)mySwitchChanged:(id)sender
+{
+    self.myLabel.text = @"I was touched";
+//    NSLog(@"TouchedFired");
+    if (_myLabel.text !=nil) {
+        NSLog(@"LabelNotEmpty");
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
